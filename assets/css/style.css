@@ -1,0 +1,145 @@
+.bg-header {
+    background: linear-gradient(154deg, #008FE2 0px, #00B29C 100%) repeat scroll 0% 0% transparent;
+}
+.datatable-footer, .datatable-header {
+    padding: 20px 20px 0;
+}
+.ui-datepicker-calendar {
+       display: none;
+    }
+    .ui-datepicker-month {
+       display: none;
+    }
+    .ui-datepicker-prev{
+       display: none;
+    }
+    .ui-datepicker-next{
+       display: none;
+    }
+.padding-right-no-sk{
+  padding-right: 16px;
+}
+.padding-right-no-hm{
+  padding-right: 10px;
+}
+.padding-right-no-sip{
+  padding-right: 10px;
+}
+/* padding SKTL */
+.padding-right-no-sktl{
+  padding-right: 0px;
+}
+.padding-right-ruangan-sktl{
+  padding-right: 4px;
+}
+.padding-right-rak-sktl{
+  padding-right: 44px;
+}
+.padding-right-lemari-sktl{
+  padding-right: 19px;
+}
+.padding-right-roll-sktl{
+  padding-right: 9px;
+}
+.padding-right-box-sktl{
+  padding-right: 46px;
+}
+/**/
+/* padding Kontrak */
+.padding-right-no-kontrak{
+  padding-right: 0px;
+}
+.padding-right-ruangan-kontrak{
+  padding-right: 26px;
+}
+.padding-right-rak-kontrak{
+  padding-right: 66px;
+}
+.padding-right-lemari-kontrak{
+  padding-right: 41px;
+}
+.padding-right-roll-kontrak{
+  padding-right: 31px;
+}
+.padding-right-box-kontrak{
+  padding-right: 68px;
+}
+/**/
+.padding-right-rak{
+  padding-right: 40px;
+}
+.padding-right-lemari{
+  padding-right: 15px;
+}
+.padding-right-roll{
+  padding-right: 5px;
+}
+.padding-right-box{
+  padding-right: 42px;
+}
+/*padding bangunan*/
+.padding-right-tanah{
+  padding-right: 32px;
+}
+/*padding harga*/
+.padding-pertama{
+  padding-right: 14px;
+}
+.padding-terakhir{
+  padding-right: 17px;
+}
+.padding-angsuran{
+  padding-right: 18px;
+}
+/*header*/
+/* bg hero */
+.header {
+  /* Location of the image */
+  
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  height: 450px;
+  z-index: -100000;
+}
+/* data table*/
+.dataTables_filter {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0 0 20px 20px;
+    margin-top: 10px;
+}
+.dataTables_length{
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.dataTables_info{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.dataTables_paginate{
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.table{
+  margin-top: 5px;
+}
+.border-fix{
+  border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;
+}
