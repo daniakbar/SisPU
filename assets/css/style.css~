@@ -143,12 +143,3 @@
 .border-fix{
   border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;
 }
-.icons-list > li > a {
-    color:  blue;
-    display: block;
-    opacity: 1;
-    filter: alpha(opacity=100);
-}
-.icons-list > li > a:hover{
-  color: purple;
-}

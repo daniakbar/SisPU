@@ -20,46 +20,16 @@
 				<!-- /page header -->
 
 
-
 				<!-- Content area -->
-				<div class="content" >
+				<div class="content">
 
-						<!-- Info alert -->
-						<div class="alert alert-info alert-styled-left alert-arrow-left alert-component">
-							<button type="button" class="close" data-dismiss="alert"><span>&times;</span><span class="sr-only">Close</span></button>
-							<h6 class="alert-heading text-semibold">Data Berhasil di Ubah</h6>
-							
-					    </div>
-					    <!-- /info alert -->
-					    <!-- Info alert -->
-						<div class="alert alert-success alert-styled-left alert-arrow-left alert-component">
-							<button type="button" class="close" data-dismiss="alert"><span>&times;</span><span class="sr-only">Close</span></button>
-							<h6 class="alert-heading text-semibold">Data Berhasil di Tambahkan</h6>
-							
-					    </div>
-					    <!-- /info alert -->
-					     <!-- Info alert -->
-						<div class="alert alert-danger alert-styled-left alert-arrow-left alert-component">
-							<button type="button" class="close" data-dismiss="alert"><span>&times;</span><span class="sr-only">Close</span></button>
-							<h6 class="alert-heading text-semibold">Data Berhasil di Hapus</h6>
-							
-					    </div>
-					    <!-- /info alert -->
-
-						<div id="form" class="panel panel-flat animated" >
-
-							<div class="panel-body bg-indigo-400">
-								<div class="heading-elements">
-									<i id="icon-header" class="icon-file-plus position-right"></i>
-								</div>
-
-								<h3 id="title" class="no-margin">Tambah Kelembagaan </h3>
-								<span id="deskripsi">Adalah form input untuk menambahkan daftar kelembagaan pada sistem.</br> Lengkapi isi form dengan benar dan klik tombol di pojok kanan bawah untuk menyimpan</span>
+						<div id="form" class="panel panel-flat animated">
+							<div class="panel-heading">
+								<h5 class="panel-title" id="title">Tambah Kelembagaan</h5>
 							</div>
-							
 
 							<div class="panel-body">
-								<p class="content-group-lg"></p>
+								<p class="content-group-lg">Silahkan masukkan data kelembagaan dengan benar.</p>
 
 								<?php echo form_open('component/viewlembaga', array('method' => 'POST', 'class' => 'form-horizontal'));?>
 								<fieldset class="content-group">
@@ -96,16 +66,14 @@
 
 						<!-- Highlighting rows and columns -->
 						<div class="panel panel-flat">
-							<div class="panel-body bg-slate">
-								<div class="heading-elements">
-								<span class="heading-text badge">4.100 Data</span>
+							<div class="panel-heading">
+								<h5 class="panel-title animation"  data-animation="shake">Data Kelembagaan</h5>
 							</div>
 
-								<h3 class="no-margin"> <i class="icon-file-text2"></i> Data Kelembagaan</h3>
-								Lihat Semua Data Kelembagaan. <p>Icon <i class="icon-menu9"></i> pada tabel ( "Kelola Data" pojok kanan ) adalah menu <i>Dropdown</i> untuk <b>Merubah</b> atau <b>Menghapus</b> data.</p>
-							</div>
-
-							<div class="">
+							<div class="panel-body">
+								Lihat Semua Data Kelembagaan
+							
+								<hr>
 
 								<table style="border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;" class="ganti-bahasa table table-bordered table-hover">
 								<thead>
@@ -177,22 +145,18 @@
     		$('#reset').removeClass('hidden');
     		$('#submit').val('edit');
     		$('#submit').html('Ubah Data <b><i class="icon-floppy-disk"></i></b>');
-    		$('#deskripsi').html('Adalah form input untuk Merubah daftar kelembagaan yg sudah di pilih pada sistem.</br> Lengkapi isi form dengan benar dan klik tombol di pojok kanan bawah untuk menyimpan kiri bawah untuk batal.');
+
     		$('#form').addClass('shake');
-    		$('#icon-header').removeClass('icon-file-plus');
-    		$('#icon-header').addClass('icon-pencil7');
     	}
 
     	function tambah()
     	{
     		$('#form').removeClass('shake');
-    		$('#icon-header').addClass('icon-file-plus');
-    		$('#icon-header').removeClass('icon-pencil7');
+
     		$('#title').text("Tambah Kelembagaan");
     		$('#id').val("");
     		$('#lembaga').val("");
     		$('#reset').addClass('hidden');
-    		$('#info').removeClass('hidden');
     		$('#submit').val('add');
     		$('#submit').html('Simpan Data <b><i class="icon-floppy-disk"></i></b>');
     	}
